@@ -14,6 +14,7 @@ int sucDivison(int a,int b)
     }
     return b;
 }
+//测试git
 //更相减损术
 int gcd(int a,int b)
 {
@@ -28,6 +29,7 @@ int gcd(int a,int b)
     }
     return a*flag;
 }
+//新建冲突
 int main(void)
 {
     printf("9,27的最大公约数%d\n",sucDivison(9,27));  //9
