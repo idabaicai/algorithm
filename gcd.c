@@ -14,6 +14,7 @@ int sucDivison(int a,int b)
     }
     return b;
 }
+//test
 //更相减损术
 int gcd(int a,int b)
 {
