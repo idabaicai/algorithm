@@ -22,6 +22,7 @@ int gcd(int a,int b)
         a /= 2; b /= 2;
         flag *= 2;
     }
+    //新建冲突
     while(a != b) {
         if(a > b) a -= b; else b -= a;
     }
