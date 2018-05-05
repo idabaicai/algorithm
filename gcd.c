@@ -29,11 +29,11 @@ int gcd(int a,int b)
 }
 int main(void)
 {
-    printf("9,27的最大公约数%d\n",sucDivison(9,27));
-    printf("8,12的最大公约数%d\n",sucDivison(8,12));
-    printf("12,8的最大公约数%d\n",sucDivison(12,8));
-    printf("2,15的最大公约数%d\n",sucDivison(2,15));
-    printf("2,15的最大公约数%d\n",gcd(2,15));
-    printf("8,12的最大公约数%d\n",gcd(8,12));
+    printf("9,27的最大公约数%d\n",sucDivison(9,27));  //9
+    printf("8,12的最大公约数%d\n",sucDivison(8,12));  //4
+    printf("12,8的最大公约数%d\n",sucDivison(12,8));  //4
+    printf("2,15的最大公约数%d\n",sucDivison(2,15));  //1
+    printf("2,15的最大公约数%d\n",gcd(2,15));         //1
+    printf("8,12的最大公约数%d\n",gcd(8,12));         //4
     return 0;
 }
