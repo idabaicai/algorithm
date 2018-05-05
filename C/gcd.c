@@ -14,7 +14,7 @@ int sucDivison(int a,int b)
     }
     return b;
 }
-//测试git
+//测试git 解决冲突
 //更相减损术
 int gcd(int a,int b)
 {
