@@ -14,7 +14,7 @@ int sucDivison(int a,int b)
     }
     return b;
 }
-//测试git
+//ardshg
 //更相减损术
 int gcd(int a,int b)
 {
