@@ -1,3 +1,10 @@
 # algorithm
-常见算法，C语言实现
-1.gcd.c     求最大公约数
+
+## LeetCode 中文网刷题
+
+## 牛客网刷题
+
+## 学习资源
+
+- [labuladong手撕算法](https://labuladong.github.io/algo/)
+
