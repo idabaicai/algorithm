@@ -16,9 +16,8 @@ const m2 = new ListNode(3)
 const m3 = new ListNode(4)
 m1.next = m2
 m2.next = m3
-console.log(l1, m1);
 
-const mergeList = (l1, l2) => {
+const mergeList1 = (l1, l2) => {
   if(l1 === null) {
     return l2
   }
@@ -26,14 +25,32 @@ const mergeList = (l1, l2) => {
     return l1
   }
   if(l1.val < l2.val) {
-    l1.next = mergeList(l1.next, l2)
+    l1.next = mergeList1(l1.next, l2)
     return l1
   } else {
-    l2.next = mergeList(l1, l2.next)
+    l2.next = mergeList1(l1, l2.next)
     return l2
   }
 }
 
-const res = mergeList(l1, m2)
+console.log(l1, m1, 'before merged');
 
-console.log(res);
+const mergeList2 = (list1, list2) => {
+  const dummyNode = new ListNode(-1)
+    let cur = dummyNode
+    while(list1 !== null && list2 !== null) {
+        if(list1.val < list2.val) {
+            cur.next = list1
+            list1 = list1.next
+        } else {
+            cur.next = list2
+            list2 = list2.next
+        }
+        cur = cur.next
+    }
+    cur.next = list1 === null ? list2 : list1
+    return dummyNode.next
+}
+
+let res = mergeList1(l1, m2)
+console.log(res, 'after merged');
